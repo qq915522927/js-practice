@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="drag-raw.js"></script>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    #ele2 {
+        background-color: aquamarine;
+    }
+</style>
+</head>
+<script>
+    window.onload = () => {
+        drag(document.querySelector('#ele'))
+        drag(document.querySelector('#ele2'))
+        drag(document.querySelector('#text'))
+    }
+</script>
+<body>
+    <div id="ele"></div>
+    <div id="ele2">ele2</div>
+    <p id="text"> text</p>
+    
+</body>
+</html>
